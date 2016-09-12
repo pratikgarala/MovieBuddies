@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_add_event"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.thatsmepratik.moviebuddies.ui.AddEventActivity">
+
+    <EditText
+        android:id="@+id/et_eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Event Name"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_movieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_eventName"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/et_eventName"
+        android:layout_alignStart="@+id/et_eventName"
+        android:layout_alignRight="@+id/et_eventName"
+        android:layout_alignEnd="@+id/et_eventName">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_local_movies_black_24dp" />
+
+        <EditText
+            android:id="@+id/et_movieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="Movie Name"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:scrollHorizontally="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_movieName"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/ll_movieName"
+        android:layout_alignStart="@+id/ll_movieName"
+        android:layout_alignRight="@+id/ll_movieName"
+        android:layout_alignEnd="@+id/ll_movieName">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_date_range_black_24dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:hint="Date"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/et_eventDate"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_watch_later_black_24dp"
+            android:layout_marginTop="13dp" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:hint="Time"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/et_eventTime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_eventVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_dateTime"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/ll_dateTime"
+        android:layout_alignStart="@+id/ll_dateTime"
+        android:layout_alignRight="@+id/ll_dateTime"
+        android:layout_alignEnd="@+id/ll_dateTime">
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_location_on_black_24dp" />
+
+        <EditText
+            android:id="@+id/et_eventVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="Venue"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:scrollHorizontally="false" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_eventDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_eventVenue"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/ll_eventVenue"
+        android:layout_alignStart="@+id/ll_eventVenue"
+        android:layout_alignRight="@+id/ll_eventVenue"
+        android:layout_alignEnd="@+id/ll_eventVenue">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_description_black_24dp"
+            android:layout_marginTop="13dp" />
+
+        <EditText
+            android:id="@+id/et_eventDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:hint="Event Description"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollHorizontally="false" />
+    </LinearLayout>
+
+
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="date"-->
+        <!--android:ems="10"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_below="@+id/et_eventDesc"-->
+        <!--android:id="@+id/et_eventDate"-->
+        <!--android:hint="Date"-->
+        <!--android:layout_alignLeft="@+id/et_eventDesc"-->
+        <!--android:layout_alignStart="@+id/et_eventDesc"-->
+        <!--android:layout_alignRight="@+id/et_eventDesc"-->
+        <!--android:layout_alignEnd="@+id/et_eventDesc" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="time"-->
+        <!--android:ems="10"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_below="@+id/et_eventDate"-->
+        <!--android:id="@+id/et_eventTime"-->
+        <!--android:hint="Time"-->
+        <!--android:layout_alignRight="@+id/et_eventDate"-->
+        <!--android:layout_alignEnd="@+id/et_eventDate"-->
+        <!--android:layout_alignLeft="@+id/et_eventDate"-->
+        <!--android:layout_alignStart="@+id/et_eventDate" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_submit_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigation_check_24"/>
+
+
+
+</RelativeLayout>

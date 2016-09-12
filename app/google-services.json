@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "749064114554",
+    "firebase_url": "https://moviebuddies-27349.firebaseio.com",
+    "project_id": "moviebuddies-27349",
+    "storage_bucket": "moviebuddies-27349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749064114554:android:190f605d3e4c77d8",
+        "android_client_info": {
+          "package_name": "com.example.thatsmepratik.moviebuddies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749064114554-inaki838lsu8hhkm1d8fh0g5gjqe82hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoIPKa2IXbwV3qQFOtXdh49-PKaS1s80I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
